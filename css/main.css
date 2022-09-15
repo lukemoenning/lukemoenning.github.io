@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +11,23 @@ body {
     outline: 0;
     font-size: 100%;
     font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #87ceeb;
+    border-radius: 0px;
+    /* border: 1px solid white; */
 }
 
 
@@ -39,7 +62,7 @@ body {
 
 
 /* Intro */
-.hero {
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,13 +89,13 @@ body {
 
 #socials {
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 #socials li {
-    display: inline-block;
     padding: 1em;
     justify-content: space-between;
-
 }
 
 #socials a {
@@ -81,5 +104,26 @@ body {
 
 #socials a:hover {
     color: black;
+}
+
+
+
+/* About */
+#about {
+    display: flex;
+    background-color: black;
+    height: 500px;
+    flex-direction: column;
+}
+
+#about-title {
+    color: whitesmoke;
+    font-size: xx-large;
+    text-shadow: 1px 1px black;
+}
+
+#description {
+    color: whitesmoke; 
+    font-size: large;
 }
 
