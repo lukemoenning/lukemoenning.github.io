@@ -67,8 +67,15 @@ body::-webkit-scrollbar-thumb {
     color:var(--color-secondary);
 }
 
+@media only screen and (min-width: 900px) {
+    
+}
 
 
+
+
+
+/* Transition Gradient */
 .gradient {
     height: 2em;
     width: 100;
@@ -76,7 +83,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* Intro */
+
+
+
+/* Hero */
 #hero {
     display: flex;
     align-items: center;
@@ -85,7 +95,7 @@ body::-webkit-scrollbar-thumb {
     background:url(/images/background.png);
     background-position: center;
     background-size: 100% 100%;
-    height: 100vh;
+    height: 75vh;
 }
 
 #name {
@@ -121,12 +131,20 @@ body::-webkit-scrollbar-thumb {
     color: var(--color-secondary);
 }
 
+@media only screen and (min-width: 900px) {
+    #hero {
+        height: 100vh;
+    }
+}
+
+
 
 
 /* About */
 #about {
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: var(--color-tertiary);
     height: 500px;
     justify-content: space-evenly;
@@ -137,8 +155,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
-    outline: 2px groove var(--color-primary);
+    width: 100%;
     padding: 2em;
 }
 
@@ -156,7 +173,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 #profile-pic {
-    height: 20em;
+    height: 12.5em;
     width: auto;
+}
+
+@media only screen and (min-width: 900px) {
+    #about {
+        flex-direction: row;
+    }
+
+    #about-text {
+        width: 30%;
+        outline: 2px groove var(--color-primary);
+    }
+
+    #profile-pic {
+        height: 20em;
+    }
+
 }
 
