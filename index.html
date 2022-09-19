@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Moenning's Personal Website</title>
+    <title>Luke Moenning's Website</title>
 
     <!-- links the css sheets-->
     <link rel="stylesheet" href="css/main.css"> 
@@ -17,17 +17,33 @@
     <!-- icons-->
     <script src="https://kit.fontawesome.com/851c6d5c7e.js" crossorigin="anonymous"></script>
 
+    <!-- favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    
+
+
 </head>
 <body>
     <div id = "wrapper">
         <header>
             <nav id = nav-wrapper>
-                <ul class="nav">
-                    <li class = "navlink"><a href="#hero">Home</a></li>
-                    <li class = "navlink"><a href="#about">About</a></li>
-                    <li class = "navlink"><a href="#">Experience</a></li>
-                    <li class = "navlink"><a href="#">Projects</a></li>
-                    <li class = "navlink"><a href="#">Contact Me</a></li>
+                <a href = #hero><img id = "logo" src="images/favicons/favicon-32x32.png" alt="logo"></a>
+
+                <ul id = "nav"></ul>
+                    <input type = "checkbox" id = "nav-checkbox" />
+                    <label for = "nav-checkbox" class = "nav-toggle">
+                        <i id = "hambar" class="fa-solid fa-bars fa-2x"></i>
+                    </label>
+
+                    <div class = "menu">    
+                        <li class = "navlink"><a href="#about">About</a></li>
+                        <li class = "navlink"><a href="#">Experience</a></li>
+                        <li class = "navlink"><a href="#">Projects</a></li>
+                        <li class = "navlink"><a href="#">Contact Me</a></li>
+                        <li class = "navlink" id = "resume"><a href="resume.pdf" target = "blank">Resume</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -59,7 +75,8 @@
                 </h1>
 
                 <h2 id = "description">
-                    I am a undergraduate student studying computer science. I have a passion for software engineering, and I'm interested in growing my skill set.
+                    I am a undergraduate student studying computer science. I have a passion for 
+                    software engineering, and I'm interested in growing my skills.
                 </h2>
             </div>
 
@@ -70,7 +87,15 @@
         </div>
 
         <section id = "experience">
-            
+            <div id = "skills-wrapper">
+                <h1 id = "skills-title">
+                    Skills
+                </h1>
+
+                <h2 id = "skills">
+                    Java, Python 
+                </h2>
+            </div>
         </section>
 
     </div>

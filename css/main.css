@@ -15,7 +15,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* Color Palette */
+/* COLOR PALETTE */
 :root {
     --color-primary: #87ceeb;
     --color-secondary: whitesmoke;
@@ -24,9 +24,9 @@ body {
 
 
 
-/* Scrollbar */
+/* SCROLLBAR */
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -42,10 +42,10 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/* Navigation Bar */ 
-.nav {
+/* NAVIGATION BAR */ 
+#nav-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     position: fixed;
@@ -55,38 +55,98 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navlink a {
-    margin: 1em;
-    justify-content: space-between;
-    text-decoration: none;
     color: var(--color-primary);
-    font: bold;
-    font-size: 1.25em;
+    text-decoration: none;
 }
 
-.navlink a:hover {
-    color:var(--color-secondary);
+#logo {
+    size: auto;
+    padding-left: 1rem;
 }
 
-@media only screen and (min-width: 900px) {
-    
+.menu {
+    display: flex;
+
+    gap: 1rem;
+    font-size: 1em;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li :hover {
+    color: var(--color-secondary);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+input[type = checkbox] {
+    display: none;
+}
+
+#nav-toggle {
+    display: none;
+    user-select: none;
+}
+
+#hambar {
+    display: none;
+    padding-right: 1rem;
+    color: var(--color-primary);
+}
+
+#resume a {
+    font-style: italic;
+}
+
+/* MOBILE NAVIGATION BAR */
+@media only screen and (max-width: 800px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 3rem;
+        text-align: center;
+        padding: 16px 0;
+        background-color: var(--color-tertiary);
+    }
+
+    .menu li :hover {
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+
+    input[type = checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    #hambar{
+        display: block;
+    }
 }
 
 
 
 
 
-/* Transition Gradient */
+/* TRANSITION GRADIENT */
 .gradient {
     height: 2em;
     width: 100;
-    background: linear-gradient(black, var(--color-primary), black);
+    background: linear-gradient(var(--color-tertiary), var(--color-primary), var(--color-tertiary));
 }
 
 
 
 
 
-/* Hero */
+/* HERO */
 #hero {
     display: flex;
     align-items: center;
@@ -131,7 +191,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--color-secondary);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
     #hero {
         height: 100vh;
     }
@@ -140,7 +200,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/* About */
+/* ABOUT */
 #about {
     display: flex;
     align-items: center;
@@ -177,7 +237,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
     #about {
         flex-direction: row;
     }
