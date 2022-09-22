@@ -255,6 +255,41 @@ input[type = checkbox] {
 
 
 
+/* EXPERIENCE */
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-quaternary);
+    height: 1100px;
+}
+
+#education, #work {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: 3px solid red;
+}
+
+#education h1, #work h1 {
+    font-size: xx-large;
+}
+
+#education h2, #work h2 {
+    align-items: flex-start;
+    font-style: italic;
+}
+
+#education h3, #work h3{
+    
+}
+
+
+
 
 /* CONTACT ME */
 #contact-me {

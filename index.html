@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luke Moenning's Website</title>
 
-    <!-- links the css sheets-->
+    <!-- link the css sheets-->
     <link rel="stylesheet" href="css/main.css"> 
 
     <!-- fonts-->
@@ -26,157 +26,224 @@
 
 </head>
 <body>
-    <div id = "wrapper">
+   
 
-        <!-- NAVIGATION -->
-        <header>
-            <nav id = nav-wrapper>
-                <a href = #hero><img id = "logo" src="images/favicons/favicon-32x32.png" alt="logo"></a>
+    <!-- NAVIGATION -->
+    <header>
+        <nav id = nav-wrapper>
+            <a href = #hero><img id = "logo" src="images/favicons/favicon-32x32.png" alt="logo"></a>
 
-                <ul id = "nav"></ul>
-                    <input type = "checkbox" id = "nav-checkbox" />
-                    <label for = "nav-checkbox" class = "nav-toggle">
-                        <i id = "hambar" class="fa-solid fa-bars fa-2x"></i>
-                    </label>
+            <ul id = "nav"></ul>
+                <input type = "checkbox" id = "nav-checkbox" />
+                <label for = "nav-checkbox" class = "nav-toggle">
+                    <i id = "hambar" class="fa-solid fa-bars fa-2x"></i>
+                </label>
 
-                    <div class = "menu">    
-                        <li class = "navlink"><a href="#about">About</a></li>
-                        <li class = "navlink"><a href="#">Experience</a></li>
-                        <li class = "navlink"><a href="#">Projects</a></li>
-                        <li class = "navlink"><a href="#contact-me">Contact Me</a></li>
-                        <li class = "navlink" id = "resume"><a href="resume.pdf" target = "blank">Resume</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
-        
-
-
-        <!-- HERO -->
-        <div id = "hero-wrapper">
-            <section id = "hero">
-                <h1 id = "name">Luke Moenning</h1>
-
-                <h2 id = "title">Software Engineer</h2>    
-
-                <ul id = "socials">
-                    <li><a href="https://github.com/lukemoenning"><i class="fa fa-github fa-2x"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/lukemoenning/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
-                    <li><a href="mailto:luke.moenning@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
-                    <li><a href="tel:1-319-440-7133"><i class="fa-solid fa-phone fa-2x"></i></a></li>
-                </ul>
-
-            </section>
-        </div>
-
-
-        
-        <!-- TRANSITION -->
-        <div class="gradient">
-        </div>
-
-
-
-        <!-- ABOUT ME -->
-        <section id = "about">
-            <div id = "about-text">
-                <h1 id = "about-title">
-                    About Me                
-                </h1>
-
-                <h2 id = "description">
-                    I am a undergraduate student studying computer science. I have a passion for 
-                    software engineering, and I'm interested in growing my skills.
-                </h2>
-            </div>
-
-            <img id = "profile-pic" src="/images/profile-pic.png" alt="A photo of myself">
-        </section>
-
-
-
-        <!-- TRANSITION -->
-        <div class="gradient">
-        </div>
-
-
-
-        <!-- EXPERIENCE -->
-        <section id = "experience">
-            <div id = "skills-wrapper">
-                <h1 id = "skills-title">
-                    Skills
-                </h1>
-
-                <h2 id = "skills">
-                    Java, Python 
-                </h2>
-            </div>
-        </section>
-
-
-        
-        <!-- TRANSITION -->
-        <div class="gradient">
-        </div>
-
+                <div class = "menu">    
+                    <li class = "navlink"><a href="#about">About</a></li>
+                    <li class = "navlink"><a href="#experience">Experience</a></li>
+                    <li class = "navlink"><a href="#projects">Projects</a></li>
+                    <li class = "navlink"><a href="#contact-me">Contact Me</a></li>
+                    <li class = "navlink" id = "resume"><a href="resume.pdf" target = "blank">Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     
 
-        <!-- CONTACT ME -->
-        <section id="contact-me">
-            <div id="contact-title-wrapper">
-                <h1>
-                    I would love to get in touch
-                </h1>
 
-                <h2>
-                    Ways to reach me
-                </h2>
-            </div>
+    <!-- HERO -->
+    <div id = "hero-wrapper">
+        <section id = "hero">
+            <h1 id = "name">Luke Moenning</h1>
 
-            <div id="contact-info-wrapper">
-                <div id="location-info">
-                    <i class="fa-solid fa-location-dot fa-2x"></i>
-                    
-                    <h3>Where I'm Located</h3>
+            <h2 id = "title">Software Engineer</h2>    
 
-                    <p>Iowa City, IA</p>
-                </div>
-
-                <div id="phone-info">
-                    <i class="fa-solid fa-phone fa-2x"></i>
-
-                    <h3>Phone Number</h3>
-
-                    <p><a href="tel:1-319-440-7133">319-440-7133</a></p>
-                </div>
-
-                <div id="email-info">
-                    <i class="fa-solid fa-envelope fa-2x"></i>
-
-                    <h3>Email Adress</h3>
-
-                    <p><a href="mailto:luke.moenning@gmail.com">luke.moenning@gmail.com</a></p>
-                </div>
-                
-            </div>
-        </section>
-
-
-
-        <!-- FOOTER -->
-        <div id = "footer">
-            <small id = "copyright">Copyright &copy; 2022, Luke Moenning</small> 
-
-            <ul id = "footer-socials">
-                <li><a href="https://github.com/lukemoenning"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lukemoenning/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="mailto:luke.moenning@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="tel:1-319-440-7133"><i class="fa-solid fa-phone"></i></a></li>
+            <ul id = "socials">
+                <li><a href="https://github.com/lukemoenning"><i class="fa fa-github fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lukemoenning/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+                <li><a href="mailto:luke.moenning@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+                <li><a href="tel:1-319-440-7133"><i class="fa-solid fa-phone fa-2x"></i></a></li>
             </ul>
-        </div> 
 
-
+        </section>
     </div>
+
+
+    
+    <!-- TRANSITION -->
+    <div class="gradient">
+    </div>
+
+
+
+    <!-- ABOUT ME -->
+    <section id = "about">
+        <div id = "about-text">
+            <h1 id = "about-title">
+                About Me                
+            </h1>
+
+            <h2 id = "description">
+                I am a undergraduate student studying computer science. I have a passion for 
+                software engineering, and I'm interested in growing my skills.
+            </h2>
+        </div>
+
+        <img id = "profile-pic" src="/images/profile-pic.png" alt="A photo of myself">
+    </section>
+
+
+
+    <!-- TRANSITION -->
+    <div class="gradient">
+    </div>
+
+
+
+    <!-- EXPERIENCE -->
+    <section id = "experience">
+
+        <!-- EDUCATION -->
+        <div id="education">
+            <h1>Education</h1>
+
+            <div id="bachelors">
+                <div id="bachelors-wrap">
+                    <h2>
+                        Bachelors of Science
+                    </h2>
+
+                    <h3>
+                        The University of Iowa <span>Anticipated 2021 - 2024</span>
+                    </h3>
+                </div>
+          
+                <p>
+                    computer science major
+                </p>
+
+            </div>
+
+            <div id="bachelors">
+                <div id="bachelors-wrap">
+                    <h2>
+                        High School Deploma
+                    </h2>
+
+                    <h3>
+                        West Senior High School <span>2017-2021</span>
+                    </h3>
+                </div>
+                  
+                <p>
+                    GPA: 4.32
+                </p>
+            </div>
+        </div>
+
+
+        <!-- WORK -->
+        <div id="work">
+            <h1>Work</h1>
+
+            <div id="web-intern">
+                <div id="web-intern-wrap">
+                    <h2>
+                        Web Intern
+                    </h2>
+
+                    <h3>
+                        The University of Iowa - College of Engineering<span>September - Present</span>
+                    </h3>
+                </div>
+          
+                <p>
+                    maintain website
+                </p>
+
+            </div>
+
+            <div id="lead-instructor">
+                <div id="lead-instructor-wrap">
+                    <h2>
+                        Lead Instructor
+                    </h2>
+
+                    <h3>
+                        Mathnasium - The Math Learning Center <span>2019 - Present</span>
+                    </h3>
+                </div>
+                  
+                <p>
+                    instruct math
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+    <!-- TRANSITION -->
+    <div class="gradient">
+    </div>
+
+
+
+    <!-- CONTACT ME -->
+    <section id="contact-me">
+        <div id="contact-title-wrapper">
+            <h1>
+                I would love to get in touch
+            </h1>
+
+            <h2>
+                Ways to reach me
+            </h2>
+        </div>
+
+        <div id="contact-info-wrapper">
+            <div id="location-info">
+                <i class="fa-solid fa-location-dot fa-2x"></i>
+                
+                <h3>Where I'm Located</h3>
+
+                <p>Iowa City, IA</p>
+            </div>
+
+            <div id="phone-info">
+                <i class="fa-solid fa-phone fa-2x"></i>
+
+                <h3>Phone Number</h3>
+
+                <p><a href="tel:1-319-440-7133">319-440-7133</a></p>
+            </div>
+
+            <div id="email-info">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+
+                <h3>Email Adress</h3>
+
+                <p><a href="mailto:luke.moenning@gmail.com">luke.moenning@gmail.com</a></p>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <div id = "footer">
+        <small id = "copyright">Copyright &copy; 2022, Luke Moenning</small> 
+
+        <ul id = "footer-socials">
+            <li><a href="https://github.com/lukemoenning"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lukemoenning/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:luke.moenning@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="tel:1-319-440-7133"><i class="fa-solid fa-phone"></i></a></li>
+        </ul>
+    </div> 
+
 </body>
 </html>
