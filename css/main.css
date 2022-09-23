@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-weight: 300;
     /* outline: 3px solid red; */
 }
 
@@ -13,14 +14,17 @@ body {
     outline: 0;
     font-size: 100%;
     font-family: "Montserrat", sans-serif;
+    min-height: calc(100vh - 30px);
 }
+
+
 
 /* COLOR PALETTE */
 :root {
     --color-primary: #87ceeb;
     --color-secondary: whitesmoke;
     --color-tertiary: black;
-    --color-quaternary: tan;
+    --color-quaternary: #D7E5F0;
 }
 
 
@@ -99,6 +103,7 @@ input[type = checkbox] {
 
 #resume a {
     font-style: italic;
+    font-weight: 600;
 }
 
 /* MOBILE NAVIGATION BAR */
@@ -153,10 +158,10 @@ input[type = checkbox] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:url(/images/background.png);
+    background:url(/images/mobile-background.png);
     background-position: center;
     background-size: 100% 100%;
-    height: 75vh;
+    height: 100vh;
 }
 
 #name {
@@ -164,12 +169,14 @@ input[type = checkbox] {
     margin: 0;
     font-size: xxx-large;
     text-shadow: 1px 1px var(--color-tertiary);
+
 }
 
 #title {
     color: var(--color-secondary);
     padding: 0.5em;
     font-size: x-large;
+    font-style: italic;
     text-shadow: 1px 1px var(--color-tertiary);
 }
 
@@ -194,7 +201,9 @@ input[type = checkbox] {
 
 @media only screen and (min-width: 800px) {
     #hero {
-        height: 100vh;
+        background:url(/images/background4.png);
+        background-position: center;
+        background-size: 100% 100%;
     }
 }
 
@@ -223,6 +232,7 @@ input[type = checkbox] {
 #about-title {
     color: var(--color-secondary);
     font-size: xx-large;
+    font-weight: 600;
     text-shadow: 1px 1px var(--color-tertiary);
     height: 1.5em;
 }
@@ -262,32 +272,87 @@ input[type = checkbox] {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--color-quaternary);
-    height: 1100px;
+    height: 1200px;
 }
 
 #education, #work {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 550px;
     width: 80%;
     justify-content: space-evenly;
     align-items: center;
-    outline: 3px solid red;
 }
 
 #education h1, #work h1 {
     font-size: xx-large;
+    font-weight: 600;
+}
+
+#bachelors, #high-school, #web-intern, #lead-instructor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #education h2, #work h2 {
     align-items: flex-start;
     font-style: italic;
+    font-weight: 600;
 }
 
-#education h3, #work h3{
-    
+#education h3, #work h3 {
+  font-size: medium;  
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
+span {
+    font-style: italic;
+    font-size: small;
+}
+
+#education p, #work p {
+    color: var(--color-tertiary);
+}
+
+@media only screen and (min-width: 800px){
+    #experience {
+        height: 800px;
+    }
+
+    #bachelors, #high-school, #web-intern, #lead-instructor {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    #education p, #work p {
+        height: 100%;
+        width: 40%;
+    }
+
+}
+
+
+
+/* PROJECTS */
+#projects {
+    display: flex;
+    background-color: var(--color-tertiary);
+    height: 600px;
+    justify-content: center;
+}
+
+#projects h1 {
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--color-secondary);
+    font-size: xx-large;
+    font-weight: 600;
+}
 
 
 
@@ -313,11 +378,13 @@ input[type = checkbox] {
 #contact-title-wrapper h1 {
     color: var(--color-tertiary);
     font-size: x-large;
+    font-weight: 600;
 }
 
 #contact-title-wrapper h2 {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     font-size: large;
+    font-style: italic;
 }
 
 #contact-info-wrapper {
@@ -343,15 +410,16 @@ input[type = checkbox] {
 
 #location-info h3, #phone-info h3, #email-info h3 {
     color: var(--color-tertiary);
+    font-weight: 600;
 }
 
 #location-info p {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 #phone-info a, #email-info a {
     text-decoration: none;
-    color: var(--color-secondary)
+    color: var(--color-tertiary)
 }
 
 @media only screen and (min-width: 800px) {
