@@ -33,6 +33,33 @@ body {
 
 
 
+/* TRANSITION GRADIENTS */
+#gradient-hero-about {
+    height: 1em;
+    width: 100;
+    background: linear-gradient(var(--color-primary), var(--color-tertiary));
+}
+
+#gradient-about-experience {
+    height: 2em;
+    width: 100;
+    background: linear-gradient(var(--color-tertiary), var(--color-primary), var(--color-quaternary));
+}
+
+#gradient-experience-projects {
+    height: 2em;
+    width: 100;
+    background: linear-gradient(var(--color-quaternary), var(--color-primary), var(--color-tertiary));
+}
+
+#gradient-projects-contact {
+    height: 2em;
+    width: 100;
+    background: linear-gradient(var(--color-tertiary), var(--color-primary), var(--color-quaternary));
+}
+
+
+
 /* SCROLLBAR */
 body::-webkit-scrollbar {
     width: 5px;
@@ -45,7 +72,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--color-primary);
     border-radius: 0px;
-    /* border: 1px solid white; */
 }
 
 
@@ -144,18 +170,6 @@ input[type = checkbox] {
 
 
 
-
-/* TRANSITION GRADIENT */
-.gradient {
-    height: 2em;
-    width: 100;
-    background: linear-gradient(var(--color-tertiary), var(--color-primary), var(--color-tertiary));
-}
-
-
-
-
-
 /* HERO */
 #hero {
     display: flex;
@@ -164,7 +178,7 @@ input[type = checkbox] {
     flex-direction: column;
     background:url(/images/mobile-background.png);
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -203,11 +217,18 @@ input[type = checkbox] {
     color: var(--color-secondary);
 }
 
+#hero h4 {
+    font-size: medium;
+    color: var(--color-secondary);
+}
+
 @media only screen and (min-width: 800px) {
     #hero {
         background:url(/images/background4.png);
         background-position: center;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 }
 
@@ -345,9 +366,10 @@ span {
 /* PROJECTS */
 #projects {
     display: flex;
+    flex-direction: column;
     background-color: var(--color-tertiary);
     height: 600px;
-    justify-content: center;
+    align-items: center;
 }
 
 #projects h1 {
