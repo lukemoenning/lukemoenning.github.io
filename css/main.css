@@ -4,7 +4,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-weight: 300;
-    /* outline: 3px solid red; */
+    /* outline: 1px solid red; */
+}
+
+html {
+    background-color: var(--color-tertiary);
 }
 
 body {
@@ -453,7 +457,7 @@ span {
 /* FOOTER */
 #footer {
     display: flex; 
-    height: 30px;
+    height: auto;
     background-color: var(--color-tertiary);
     justify-content: space-between;
 }
