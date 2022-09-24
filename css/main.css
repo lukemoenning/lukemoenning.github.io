@@ -334,7 +334,7 @@ input[type = checkbox] {
   margin-bottom: 1rem;
 }
 
-span {
+#experience span {
     font-style: italic;
     font-size: small;
 }
@@ -368,8 +368,9 @@ span {
     display: flex;
     flex-direction: column;
     background-color: var(--color-tertiary);
-    height: 600px;
+    height: 1600px;
     align-items: center;
+    justify-content: space-between;
 }
 
 #projects h1 {
@@ -379,6 +380,106 @@ span {
     font-size: xx-large;
     font-weight: 600;
 }
+
+#projects-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1450px;
+    width: 90%;
+    padding: 1rem;
+}
+
+#snake-game, #weather-app, #personal-website {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    outline: 2px groove var(--color-primary);
+}
+
+#projects-wrap a {
+    text-decoration: none;
+}
+
+#projects-wrap a :hover {
+    outline: 10px solid var(--color-primary);
+}
+
+#snake-game-img {
+    height: 250px;
+    width: 100%;
+    background:url(/images/snake-game-final.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+#weather-app-img {
+    height: 300px;
+    width: auto;
+    background:url(/images/iowa-city-weather.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+#personal-website-img {
+    height: 200px;
+    width: auto;
+    background:url(/images/website.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+#snake-game p, #weather-app p, #personal-website p  {
+    margin-top: 0.5rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#projects span {
+    font-size: small;
+    pointer-events: none;
+}
+
+#snake-game h6, #weather-app h6, #personal-website h6  {
+    margin-top: 1rem;
+    font-style: italic;
+    width: auto;
+    pointer-events: none;
+}
+
+#projects h6 span {
+    outline: 2px groove var(--color-tertiary);
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    pointer-events: none;
+}
+
+@media only screen and (min-width: 800px) {
+    #projects {
+        height: 700px;
+    }
+
+    #projects-wrap {
+        height: 500px;
+        flex-direction: row;
+        width: 95%;
+        margin-bottom: 4rem;
+    }
+
+    #snake-game, #weather-app, #personal-website {
+        width: auto;
+        margin: 1rem;
+    }
+}
+
 
 
 
