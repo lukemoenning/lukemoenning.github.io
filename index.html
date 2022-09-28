@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luke Moenning's Website</title>
 
-    <!-- link the css sheets-->
+    <!--css sheets-->
     <link rel="stylesheet" href="css/main.css"> 
+
+    <!-- scripts -->
+    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,21 +59,37 @@
     <!-- HERO -->
     <div id = "hero-wrapper">
         <section id = "hero">
-            <h1 id = "name">Luke Moenning</h1>
+            <div id="hero-text">
+                <h1 id = "name">Luke Moenning</h1>
 
-            <h2 id = "title">Software Engineer</h2>    
+                <h2 id = "title"><span id="typing-animation"></span></h2>    
 
-            <ul id = "socials">
-                <li><a href="https://github.com/lukemoenning"><i class="fa fa-github fa-2x"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lukemoenning/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
-                <li><a href="mailto:luke.moenning@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
-                <li><a href="tel:1-319-440-7133"><i class="fa-solid fa-phone fa-2x"></i></a></li>
-            </ul>
+                <ul id = "socials">
+                    <li><a href="https://github.com/lukemoenning"><i class="fa fa-github fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lukemoenning/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+                    <li><a href="mailto:luke.moenning@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+                    <li><a href="tel:1-319-440-7133"><i class="fa-solid fa-phone fa-2x"></i></a></li>
+                </ul>
+            </div>
 
             <h4>
                 Photo: Estes Park, CO
             </h4>
         </section>
+
+        <!-- TYPING ANIMATION -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            let options = {
+                strings: ["Software Developer", "Student"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+                showCursor: true,
+            }
+            let typed = new Typed("#typing-animation", options)
+        </script>
+
     </div>
 
 
